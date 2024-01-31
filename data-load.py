@@ -23,7 +23,7 @@ datetime_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "datetime_dim")\
+    .option("dbtable", "datetime_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -33,7 +33,7 @@ passenger_count_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "passenger_count_dim")\
+    .option("dbtable", "passenger_count_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -43,7 +43,7 @@ trip_distance_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "trip_distance_dim")\
+    .option("dbtable", "trip_distance_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -53,7 +53,7 @@ rate_code_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "rate_code_dim")\
+    .option("dbtable", "rate_code_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -63,7 +63,7 @@ payment_type_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "payment_type_dim")\
+    .option("dbtable", "payment_type_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -73,7 +73,7 @@ pickup_location_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "pickup_location_dim")\
+    .option("dbtable", "pickup_location_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -83,7 +83,7 @@ dropoff_location_dim.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "dropoff_location_dim")\
+    .option("dbtable", "dropoff_location_dim")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
@@ -93,7 +93,7 @@ fact_table.write\
     .mode('overwrite')\
     .option('url', 'jdbc:postgresql://localhost:5432/OLAP_Uber_Data_Analytics')\
     .option("driver", "org.postgresql.Driver")\
-    .option("table", "fact_table")\
+    .option("dbtable", "fact_table")\
     .option("user", "postgres")\
     .option("password", "123456")\
     .save()
