@@ -8,14 +8,14 @@ spark = SparkSession\
     .getOrCreate()
 
 
-datetime_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/datetime_dim.csv')
-passenger_count_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/passenger_count_dim.csv')
-trip_distance_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/trip_distance_dim.csv')
-rate_code_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/rate_code_dim.csv')
-payment_type_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/payment_type_dim.csv')
-pickup_location_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/pickup_location_dim.csv')
-dropoff_location_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/dropoff_location_dim.csv')
-fact_table = spark.read.parquet(f'{data_lake_dir}/transformed_data/fact_table.csv')
+datetime_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/datetime_dim.parquet')
+passenger_count_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/passenger_count_dim.parquet')
+trip_distance_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/trip_distance_dim.parquet')
+rate_code_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/rate_code_dim.parquet')
+payment_type_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/payment_type_dim.parquet')
+pickup_location_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/pickup_location_dim.parquet')
+dropoff_location_dim = spark.read.parquet(f'{data_lake_dir}/transformed_data/dropoff_location_dim.parquet')
+fact_table = spark.read.parquet(f'{data_lake_dir}/transformed_data/fact_table.parquet')
 
 # load to db
 datetime_dim.write\
