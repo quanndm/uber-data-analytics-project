@@ -1,8 +1,13 @@
 # Uber Data Analytics project
-##  Tech stack
-- in coming...
+##  Technical using in this project:
+- Python
+- Pyspark
+- PostgreSQL
+- Superset
+- OS: Window(WSL 2)
+- Hadoop: HDFS
 
-## demo
+## Demo
 1. step: data ingestion
 
 ![Run spark submit in step ingestion](./resource/step1.1.png "command when run spark-submit")
@@ -21,5 +26,6 @@
 
 ![Run spark submit in step transformation](./resource/step3.2.png "result after run command")
 
-## demo analytics
+## Demo analytics
 
+![Report](./report/uber-dashboard-2024-02-02T04-25-56.192Z.jpg "demo report")
